@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado principal con enlaces de navegación -->
+  <header>
+    <h1>Tienda de Ropa</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="registro.html">Registrarse</a>
+      <a href="carrito.html">Carrito</a>
+    </nav>
+  </header>
+
+  <!-- Controles para filtrar por categoría y talla -->
+  <section class="filtros">
+    <select id="filtro-categoria">
+      <option value="">Todas las categorías</option>
+      <option value="abrigo">Abrigos</option>
+      <option value="camiseta">Camisetas</option>
+      <option value="chaqueta">Chaquetas</option>
+      <option value="gorra">Gorras</option>
+      <option value="pantalon">Pantalones</option>
+      <option value="short">Shorts</option>
+      <option value="trajedebano">Trajes de baño</option>
+      <option value="vestido">Vestidos</option>
+      <option value="zapatilla">Zapatillas</option>
+      <option value="zapato">Zapatos</option>
+    </select>
+
+    <select id="filtro-talla">
+      <option value="">Todas las tallas</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+    </select>
+
+    <input type="text" id="busqueda" placeholder="Buscar por nombre">
+  </section>
+
+  <!-- Contenedor donde se mostrarán los productos -->
+  <main id="contenedor-productos"></main>
+
+  <!-- Script que maneja la lógica de mostrar productos y filtrarlos -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
